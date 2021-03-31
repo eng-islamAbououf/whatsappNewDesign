@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/viewContent"
+          android:title="View content"/>
+
+    <item android:id="@+id/Media"
+        android:title="Media, links, and docs"/>
+
+    <item android:id="@+id/Search"
+        android:title="Search"/>
+
+    <item android:id="@+id/Mute"
+        android:title="Mute notifications"/>
+
+    <item android:id="@+id/Wallpaper"
+        android:title="Wallpaper"/>
+
+    <item android:id="@+id/More"
+        android:title="More">
+        <menu>
+            <item android:id="@+id/Report"
+                android:title="Report"/>
+
+            <item android:id="@+id/Block"
+                android:title="Block"/>
+
+            <item android:id="@+id/Clear"
+                android:title="Clear Chat"/>
+
+            <item android:id="@+id/Export"
+                android:title="Export Chat"/>
+
+            <item android:id="@+id/Add"
+                android:title="Add shortcut"/>
+        </menu>
+    </item>
+    <item android:id="@+id/vcall"
+        android:title="vCall"
+        app:showAsAction="always"
+        android:icon="@drawable/vcall_icon"
+        />
+    <item android:id="@+id/call"
+        android:title="Call"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_call"
+        />
+
+
+</menu>

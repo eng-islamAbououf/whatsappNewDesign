@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/New_group"
+        android:title="New group"/>
+    <item android:id="@+id/New_broadcast"
+        android:title="New broadcast"/>
+    <item android:id="@+id/web"
+        android:title="WhatsApp Web"/>
+    <item android:id="@+id/starred"
+        android:title="Starred messages"/>
+    <item android:id="@+id/sittings"
+        android:title="Sittings"/>
+
+    <item android:id="@+id/search"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_search"
+        />
+
+
+</menu>

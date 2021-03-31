@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+<include layout="@layout/toolbar"
+    android:id="@+id/toolbar"
+
+    />
+<ImageButton
+    android:id="@+id/btn"
+    android:layout_width="@dimen/_30sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:background="@color/dark_green"
+    app:layout_constraintTop_toBottomOf="@id/toolbar"
+    android:src="@drawable/icon_camera"
+    tools:ignore="MissingConstraints" />
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tabLayout"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/_40sdp"
+      app:layout_constraintStart_toEndOf="@id/btn"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar"
+      app:tabIndicatorHeight="2dp"
+      app:tabIndicatorColor="@color/white"
+      android:background="@color/dark_green"
+      app:tabMode="fixed"
+      app:tabTextColor="@color/gray"
+      app:tabSelectedTextColor="@color/white"
+      app:tabGravity="fill"
+      >
+      <com.google.android.material.tabs.TabItem
+          android:id="@+id/chatTab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/chat"
+          />
+      <com.google.android.material.tabs.TabItem
+          android:id="@+id/statusTab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/status"
+          />
+      <com.google.android.material.tabs.TabItem
+          android:id="@+id/callTab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/call"
+          />
+
+
+  </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-154dp" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/circle_icon"
+        android:src="@drawable/icon_chat"
+        android:baselineAlignBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="go"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
